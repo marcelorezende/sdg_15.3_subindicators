@@ -97,7 +97,7 @@ function centerMap(bound) {
 //Function used to get the countries names from the GeoTable
 var listCountries = function() {
   ee.initialize;
-  //var gaul = ee.FeatureCollection(GAULSRC);
+  var gaul = ee.FeatureCollection(GAULSRC).sort('adm0_name');
   var countriesArray = gaul.aggregate_array('adm0_name').getInfo();
   $.each(countriesArray, function(val, text) {
     $('#selectedCountry').append($('<option></option>').val(val).html(text))
