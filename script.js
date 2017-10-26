@@ -13,7 +13,7 @@ var generateGrid = function() {
 
   //Import Topography Model image and Country Boundaries feature collection.
   var srtm = ee.Image("USGS/SRTMGL1_003");
-  var gaul = ee.FeatureCollection(GAULSRC);
+  var gaul = ee.FeatureCollection(GAULSRC).sort('adm0_name');
 
   //Define the country, projection and distance between plots (in meters) based on user input
   var country = $('#selectedCountry').find(":selected").text();
