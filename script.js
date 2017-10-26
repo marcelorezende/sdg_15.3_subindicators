@@ -1,4 +1,4 @@
-var CLIENT_ID = '77627108579-j0l3i61gohagfva9vjgnii4kjutitren.apps.googleusercontent.com';
+var CLIENT_ID = '945188122034-r8gqdcfbq87tepa0lgki5r2rlo5h7bav.apps.googleusercontent.com';
 
 //Google Map
 var map;
